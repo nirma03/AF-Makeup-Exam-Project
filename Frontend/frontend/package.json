@@ -47,6 +47,9 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest-enzyme": "^7.1.2",
     "prop-types": "^15.7.2",
     "react-image-lightbox": "^5.1.1",
     "react-router-dom": "^5.2.0"
