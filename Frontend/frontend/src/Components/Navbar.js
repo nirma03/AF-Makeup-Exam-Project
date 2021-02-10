@@ -51,9 +51,9 @@ class SampleNavbar extends Component {
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                        <Button className="mr-sm-2" variant="outline-info" >Search</Button>
                         <Button className="mr-sm-2" variant="outline-info" a href="/login">Login</Button>
                         {/*<Input label="Search" icon="search" onChange={this.onChange}/>*/}
-                        <Button className="mr-sm-2" variant="outline-info" a href="/login">Login</Button>
                         <Button className="mr-sm-2" variant="outline-info" a href="/register">Sign Up</Button>
                     </Form>
                 </Navbar>

@@ -17,6 +17,7 @@ import axios from "axios";
 import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { login } from "./ReactMiddleware/reactAuth";
+import "../css/BackgroundImage.css"
 import {Form} from "react-bootstrap";
 
 toast.configure();
@@ -111,26 +112,23 @@ class Login extends Component {
             />
         );
         return (
+            <div className="bg">
             <div id='contactformpage'>
                 <MDBView>
-                    <MDBMask overlay='indigo-strong' />
+                    {/*<MDBMask overlay='indigo-strong' />*/}
                     <MDBContainer
                         style={{ height: '100%', width: '100%', paddingTop: '10rem' }}
                         className='d-flex justify-content-center align-items-center'
                     >
                         <MDBRow>
                             <div className='white-text text-center text-md-left col-md-6 mt-xl-5 mb-5'>
-                                <h1 className='display-4 font-weight-bold'>Lorem ipsum </h1>
+                                <h1 className='display-4 font-weight-bold'>SIGN IN NOW! </h1>
                                 <hr className='hr-light' />
                                 <h6 className='mb-4'>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                                    repellendus quasi fuga nesciunt dolorum nulla magnam veniam
-                                    sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-                                    iste.
+                                    Login now to look up for your favourite property! We provide you with the most reliable and
+                                    efficient services to our customers to help them buy any property for sale and rent
                                 </h6>
-                                <MDBBtn outline color='white'>
-                                    Learn More
-                                </MDBBtn>
+
                             </div>
                             <MDBCol md='6' xl='5' className='mb-4'>
                                 <MDBCard className='dark-grey-text'>
@@ -148,7 +146,6 @@ class Login extends Component {
                                                   required />
                                         <div className='text-center mt-3 black-text'>
                                             <MDBBtn color='indigo' type="submit">Login</MDBBtn>
-                                            <MDBBtn color='indigo'>Send</MDBBtn>
                                             <br/>
                                             <br/>
                                             <MDBModalFooter>
@@ -172,6 +169,7 @@ class Login extends Component {
                         </MDBRow>
                     </MDBContainer>
                 </MDBView>
+            </div>
             </div>
         );
     }

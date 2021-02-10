@@ -132,7 +132,7 @@ class BuyPro1 extends Component {
                                                 <MDBView>
                                                     <img
                                                         className="d-block w-100"
-                                                        src="https://ap.rdcpix.com/8e3618b85e7e11a22ddaa32fe085a797l-m3490089264xd-w1020_h770_q80.jpg"
+                                                        src="https://ap.rdcpix.com/c6307bbb7123fd79928f1e86f0cfd4d0l-m1308610388od-w1024_h768.jpg"
                                                         alt="First slide"
                                                     />
                                                 </MDBView>
@@ -141,7 +141,7 @@ class BuyPro1 extends Component {
                                                 <MDBView>
                                                     <img
                                                         className="d-block w-100"
-                                                        src="https://ap.rdcpix.com/8e3618b85e7e11a22ddaa32fe085a797l-m2187260831xd-w1020_h770_q80.jpg"
+                                                        src="https://ap.rdcpix.com/c6307bbb7123fd79928f1e86f0cfd4d0l-m2667459506od-w1024_h768.jpg"
                                                         alt="Second slide"
                                                     />
                                                 </MDBView>
@@ -150,7 +150,7 @@ class BuyPro1 extends Component {
                                                 <MDBView>
                                                     <img
                                                         className="d-block w-100"
-                                                        src="https://ap.rdcpix.com/8e3618b85e7e11a22ddaa32fe085a797l-m156781287xd-w1020_h770_q80.jpg"
+                                                        src="https://ap.rdcpix.com/c6307bbb7123fd79928f1e86f0cfd4d0l-m1670988995od-w1024_h768.jpg"
                                                         alt="Third slide"
                                                     />
                                                 </MDBView>

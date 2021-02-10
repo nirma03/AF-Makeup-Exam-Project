@@ -31,8 +31,8 @@ class HomePage extends Component {
                                 <MDBView>
                                     <img
                                         className="d-block w-100 flex-1"
-                                        src="https://wallpapercave.com/wp/wp3049337.jpg"
-                                        alt="First slide"
+                                        src="https://ap.rdcpix.com/82a825a07227fea29a5bfd0310f43515l-m2756357229od-w1024_h768.jpg"
+                                        alt=""
                                     />
                                     <MDBMask overlay="black-light" />
                                 </MDBView>
@@ -45,13 +45,13 @@ class HomePage extends Component {
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
-                                        src="https://wallpapercave.com/wp/wp3049337.jpg"
-                                        alt="Second slide"
+                                        src="https://ap.rdcpix.com/9ece7af07faef8dc2b0b9d3bd3dcbe77l-m4197065771od-w1024_h768.jpg"
+                                        alt=""
                                     />
                                     <MDBMask overlay="black-strong" />
                                 </MDBView>
                                 <MDBCarouselCaption>
-                                    <h3 className="h3-responsive">Strong mask</h3>
+                                    <h3 className="h3-responsive">Luxury House - Colombo 3</h3>
                                     <p>Second text</p>
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
@@ -59,13 +59,13 @@ class HomePage extends Component {
                                 <MDBView>
                                     <img
                                         className="d-block w-100"
-                                        src="https://wallpapercave.com/wp/wp3049337.jpg"
-                                        alt="Third slide"
+                                        src="https://ap.rdcpix.com/31afe4499d9bb7debbe6d564f6967bcdl-m1705264878od-w1024_h768.jpg"
+                                        alt=""
                                     />
                                     <MDBMask overlay="black-slight" />
                                 </MDBView>
                                 <MDBCarouselCaption>
-                                    <h3 className="h3-responsive">Slight Mast</h3>
+                                    <h3 className="h3-responsive">Luxury House - Kalutara</h3>
                                     <p>Third text</p>
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
@@ -87,17 +87,17 @@ class HomePage extends Component {
                                         hover
                                         overlay='white-slight'
                                         className='card-img-top'
-                                        src='http://www.hgnv.com/wp-content/uploads/2016/12/building-a-tiny-house-720x500.jpg'
+                                        src='https://ap.rdcpix.com/e5c758e663ea0743a175177fce570795l-m243198965od-w1024_h768.jpg'
                                         alt='Card cap'
                                     />
                                 </MDBView>
                                 <MDBCardBody>
-                                    <MDBCardTitle>Desperados III </MDBCardTitle>
+                                    <MDBCardTitle>Apartment </MDBCardTitle>
                                     <MDBCardText>
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </MDBCardText>
-                                    <MDBBtn color=" purple lighten-1" href="https://desperadosgame.com/">GET IT NOW</MDBBtn>
+                                    <MDBBtn color=" purple lighten-1" href="/rentp1">GET IT NOW</MDBBtn>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
@@ -109,17 +109,17 @@ class HomePage extends Component {
                                         hover
                                         overlay='white-slight'
                                         className='card-img-top'
-                                        src='http://www.hgnv.com/wp-content/uploads/2016/12/building-a-tiny-house-720x500.jpg'
+                                        src='https://ap.rdcpix.com/e5c758e663ea0743a175177fce570795l-m1565958268od-w1024_h768.jpg'
                                         alt='Card cap'
                                     />
                                 </MDBView>
                                 <MDBCardBody>
-                                    <MDBCardTitle>Huntdown</MDBCardTitle>
+                                    <MDBCardTitle>House for Sale</MDBCardTitle>
                                     <MDBCardText>
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </MDBCardText>
-                                    <MDBBtn color="purple lighten-1" href="https://huntdown.com/">GET IT NOW</MDBBtn>
+                                    <MDBBtn color="purple lighten-1" href="#">GET IT NOW</MDBBtn>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
@@ -131,17 +131,17 @@ class HomePage extends Component {
                                         hover
                                         overlay='white-slight'
                                         className='card-img-top'
-                                        src='http://www.hgnv.com/wp-content/uploads/2016/12/building-a-tiny-house-720x500.jpg'
+                                        src='https://ap.rdcpix.com/e5c758e663ea0743a175177fce570795l-m3626358437od-w1024_h768.jpg'
                                         alt='Card cap'
                                     />
                                 </MDBView>
                                 <MDBCardBody>
-                                    <MDBCardTitle>Minecraft Dungeons</MDBCardTitle>
+                                    <MDBCardTitle>House for Rent</MDBCardTitle>
                                     <MDBCardText>
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </MDBCardText>
-                                    <MDBBtn color="purple lighten-1" href="https://www.xbox.com/en-US/games/minecraft-dungeons">GET IT NOW</MDBBtn>
+                                    <MDBBtn color="purple lighten-1" href="#">GET IT NOW</MDBBtn>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
@@ -150,10 +150,7 @@ class HomePage extends Component {
 
                 {/*section 2 starts*/}
                 <section className="text-center my-5">
-                    <h2 className="h1-responsive font-weight-bold text-center my-5 " >
-                       PRICE DROPS
-                    </h2>
-                    <MDBRow>
+                    <MDBRow >
                         <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
                             <MDBCard style={{ width: "22rem", marginTop: "1rem", marginLeft: "10rem" }}>
                                 <MDBCardHeader color="purple-gradient">2021 Latest</MDBCardHeader>
@@ -162,17 +159,17 @@ class HomePage extends Component {
                                         hover
                                         overlay='white-slight'
                                         className='card-img-top'
-                                        src='http://www.hgnv.com/wp-content/uploads/2016/12/building-a-tiny-house-720x500.jpg'
+                                        src='https://ap.rdcpix.com/e5c758e663ea0743a175177fce570795l-m243198965od-w1024_h768.jpg'
                                         alt='Card cap'
                                     />
                                 </MDBView>
                                 <MDBCardBody>
-                                    <MDBCardTitle>Desperados III </MDBCardTitle>
+                                    <MDBCardTitle>Apartment for Sale</MDBCardTitle>
                                     <MDBCardText>
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </MDBCardText>
-                                    <MDBBtn color="purple lighten-1" href="https://desperadosgame.com/">GET IT NOW</MDBBtn>
+                                    <MDBBtn color=" purple lighten-1" href="/rentp1">GET IT NOW</MDBBtn>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
@@ -184,17 +181,17 @@ class HomePage extends Component {
                                         hover
                                         overlay='white-slight'
                                         className='card-img-top'
-                                        src='http://www.hgnv.com/wp-content/uploads/2016/12/building-a-tiny-house-720x500.jpg'
+                                        src='https://ap.rdcpix.com/e5c758e663ea0743a175177fce570795l-m1565958268od-w1024_h768.jpg'
                                         alt='Card cap'
                                     />
                                 </MDBView>
                                 <MDBCardBody>
-                                    <MDBCardTitle>Huntdown</MDBCardTitle>
+                                    <MDBCardTitle>House for Sale</MDBCardTitle>
                                     <MDBCardText>
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </MDBCardText>
-                                    <MDBBtn color="purple lighten-1" href="https://huntdown.com/">GET IT NOW</MDBBtn>
+                                    <MDBBtn color="purple lighten-1" href="#">GET IT NOW</MDBBtn>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
@@ -206,20 +203,21 @@ class HomePage extends Component {
                                         hover
                                         overlay='white-slight'
                                         className='card-img-top'
-                                        src='http://www.hgnv.com/wp-content/uploads/2016/12/building-a-tiny-house-720x500.jpg'
+                                        src='https://ap.rdcpix.com/e5c758e663ea0743a175177fce570795l-m3626358437od-w1024_h768.jpg'
                                         alt='Card cap'
                                     />
                                 </MDBView>
                                 <MDBCardBody>
-                                    <MDBCardTitle>Minecraft Dungeons</MDBCardTitle>
+                                    <MDBCardTitle>House for Rent</MDBCardTitle>
                                     <MDBCardText>
                                         With supporting text below as a natural lead-in to additional
                                         content.
                                     </MDBCardText>
-                                    <MDBBtn color="purple lighten-1" href="https://www.xbox.com/en-US/games/minecraft-dungeons">GET IT NOW</MDBBtn>
+                                    <MDBBtn color="purple lighten-1" href="#">GET IT NOW</MDBBtn>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
+
                     </MDBRow>
                 </section>
 
