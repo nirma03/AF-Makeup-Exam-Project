@@ -36,7 +36,8 @@ class Register extends Component {
             email: "",
             password: "",
             confirmPassword: "",
-            contact: ""
+            contact: "",
+            userType:"customer",
         };
     }
 
@@ -89,6 +90,7 @@ class Register extends Component {
             email: this.state.email,
             password: this.state.password,
             contact: this.state.contact,
+            userType: this.state.userType,
         };
 
         if (this.state.password === this.state.confirmPassword) {

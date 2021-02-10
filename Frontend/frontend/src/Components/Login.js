@@ -16,6 +16,7 @@ import {serverUrl} from "./config";
 import axios from "axios";
 import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { login } from "./ReactMiddleware/reactAuth";
 import {Form} from "react-bootstrap";
 
 toast.configure();
@@ -61,12 +62,17 @@ class Login extends Component {
             .post(serverUrl + "/users/", users)
             .then((response) => {
 
-                console.log(users);
-                toast("Login Successful! ");
-                console.log("User logged!")
-                setTimeout(() => {
+                //Check user type and redirect to relevant page
+                const userType = response.data.user["userType"];
+                if (userType === "customer") {
+                    toast("Login  Successful");
+                    login(response.data.token, response.data.user);
                     window.location = "/";
-                }, 5000);
+                } else  {
+                    toast("Admin Login  Successful");
+                    login(response.data.token, response.data.user);
+                    window.location = "/";
+                }
             })
             .catch((error) => {
                 console.log(error.response);

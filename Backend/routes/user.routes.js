@@ -29,6 +29,7 @@ router.route("/").post((req, res) => {
                             username: user.username,
                             email: user.email,
                             contact: user.contact,
+                            userType:user.userType,
                         },
                     });
                 }
@@ -44,6 +45,7 @@ router.route("/add").post((req, res) => {
     const email = req.body.email;
     const password = req.body.password;
     const contact = req.body.contact;
+    const userType = req.body.userType;
 
 
     const newUser = new User({
@@ -51,6 +53,7 @@ router.route("/add").post((req, res) => {
         email,
         password,
         contact,
+        userType
 
     });
 
@@ -75,6 +78,7 @@ router.route("/update/:id").post((req, res) => {
         users.email = req.body.email;
         users.password = req.body.password;
         users.contact = req.body.contact;
+        users.userType= req.body.userType;
 
         bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(users.password, salt, (err, hash) => {
