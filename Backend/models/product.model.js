@@ -11,10 +11,6 @@ const productSchema = new Schema(
         productPrice:{type: String, required: true, trim: true},
         productOwner: { type: String, required: true, trim: true },
         productContact: { type: String, required: true, trim: true },
-        // images: {
-        //     type: Array,
-        //     default: [],
-        // },
     },
     {
         timestamps: true,
