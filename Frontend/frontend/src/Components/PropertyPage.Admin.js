@@ -3,6 +3,7 @@ import {BrowserRouter} from "react-router-dom";
 import {MDBBtn, MDBNav, MDBNavItem, MDBNavLink, MDBTable, MDBTableBody, MDBTableHead} from "mdbreact";
 import axios from "axios";
 import {Link} from "@material-ui/core";
+import "../css/BackgroundImage.css"
 
 const Product = props => (
     <tr>
@@ -54,9 +55,12 @@ class PropertyPageAdmin extends Component {
 
     render() {
         return (
+            <div className="bg">
             <BrowserRouter>
-
-                <div className="w-75 p-4">
+                <div className="d-flex justify-content-center">
+                    <MDBBtn color="deep-purple" >Admin Panel</MDBBtn>
+                </div>
+                <div className="d-flex justify-content-center">
                     <MDBBtn color="primary" a href="/adminHome" >Available Users</MDBBtn>
                     <MDBBtn color="primary" a href="/adminProperty">Available Property</MDBBtn>
                     <MDBBtn color="primary" a href="/adminAdd">Add New Property</MDBBtn>
@@ -81,6 +85,7 @@ class PropertyPageAdmin extends Component {
                 </table>
                 </div>
             </BrowserRouter>
+            </div>
 
         );
     }

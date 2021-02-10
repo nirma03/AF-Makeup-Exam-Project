@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput, MDBModalFooter, MDBContainer} from "mdbreact";
-
+import "../css/BackgroundImage.css"
 
 
 class ContactUs extends Component {
@@ -121,7 +121,7 @@ class ContactUs extends Component {
                 </section>
                 <br/>
                 <br/>
-            </div>
+                </div>
         );
     }
 }

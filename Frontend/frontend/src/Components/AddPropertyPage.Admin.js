@@ -1,8 +1,20 @@
 import React, {Component} from 'react';
 import {BrowserRouter} from "react-router-dom";
-import {MDBBtn, MDBNav, MDBNavItem, MDBNavLink, MDBTable, MDBTableBody, MDBTableHead} from "mdbreact";
+import {
+    MDBBtn, MDBCard, MDBCardBody,
+    MDBCol,
+    MDBContainer, MDBInput,
+    MDBNav,
+    MDBNavItem,
+    MDBNavLink,
+    MDBRow,
+    MDBTable,
+    MDBTableBody,
+    MDBTableHead
+} from "mdbreact";
 import axios from "axios";
-import {Link} from "@material-ui/core";
+import "../css/BackgroundImage.css"
+import {Form} from "react-bootstrap";
 
 
 class AddPropertyPageAdmin extends Component {
@@ -26,161 +38,195 @@ class AddPropertyPageAdmin extends Component {
             productType: '',
             productPrice: '',
             productOwner: '',
-            productContact:'',
+            productContact: '',
             products: []
         }
     }
 
-onChangeProductName(e)
-{
-    this.setState({
-        productName: e.target.value
-    })
-}
-
-onChangeProductDesc(e)
-{
-    this.setState({
-        productDesc: e.target.value
-    })
-}
-
-onChangeProductType(e)
-{
-    this.setState({
-        productType: e.target.value
-    })
-}
-
-onChangeProductPrice(e)
-{
-    this.setState({
-        productPrice: e.target.value
-    })
-}
-
-
-onChangeProductOwner(e)
-{
-    this.setState({
-        productOwner: e.target.value
-    })
-}
-
-onChangeProductContact(e)
-{
-    this.setState({
-        productContact: e.target.value
-    })
-}
-
-
-onSubmit(e)
-{
-    e.preventDefault();
-
-    const product = {
-        productName: this.state.productName,
-        productDesc: this.state.productDesc,
-        productType: this.state.productType,
-        productPrice: this.state.productPrice,
-        productOwner: this.state.productOwner,
-        productContact:this.state.productContact
+    onChangeProductName(e) {
+        this.setState({
+            productName: e.target.value
+        })
     }
 
-    console.log(product);
+    onChangeProductDesc(e) {
+        this.setState({
+            productDesc: e.target.value
+        })
+    }
 
-    axios.post('http://localhost:4000/products/add', product)
-        .then(res => console.log(res.data));
+    onChangeProductType(e) {
+        this.setState({
+            productType: e.target.value
+        })
+    }
 
-    window.location = '/adminProperty';
-}
+    onChangeProductPrice(e) {
+        this.setState({
+            productPrice: e.target.value
+        })
+    }
 
-    render()
-{
+
+    onChangeProductOwner(e) {
+        this.setState({
+            productOwner: e.target.value
+        })
+    }
+
+    onChangeProductContact(e) {
+        this.setState({
+            productContact: e.target.value
+        })
+    }
+
+
+    onSubmit(e) {
+        e.preventDefault();
+
+        const product = {
+            productName: this.state.productName,
+            productDesc: this.state.productDesc,
+            productType: this.state.productType,
+            productPrice: this.state.productPrice,
+            productOwner: this.state.productOwner,
+            productContact: this.state.productContact
+        }
+
+        console.log(product);
+
+        axios.post('http://localhost:4000/products/add', product)
+            .then(res => console.log(res.data));
+
+        window.location = '/adminProperty';
+    }
+
+    render() {
         return (
-            <BrowserRouter>
-
-                <div className="w-75 p-4">
-                    <MDBBtn color="primary" a href="/adminHome" >Available Users</MDBBtn>
-                    <MDBBtn color="primary" a href="/adminProperty">Available Property</MDBBtn>
-                    <MDBBtn color="primary" a href="/adminAdd">Add New Property</MDBBtn>
-                </div>
-                <div className="w-75 p-3">
-
-                    <form onSubmit={this.onSubmit}>
-                        <div className="form-group">
-                            <label>Property name </label>
-                            <input  type="text"
-                                    required
-                                    className="form-control"
-                                    value={this.state.productName}
-                                    onChange={this.onChangeProductName}
-                            />
-
-                        </div>
-                        <div className="form-group">
-                            <label>Property Description: </label>
-                            <input  type="text"
-                                    required
-                                    className="form-control"
-                                    value={this.state.productDesc}
-                                    onChange={this.onChangeProductDesc}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Property Type: </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                value={this.state.productType}
-                                onChange={this.onChangeProductType}
-                            />
-                        </div>
-
-                        <div className="form-group">
-                            <label>Property Price </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                value={this.state.productPrice}
-                                onChange={this.onChangeProductPrice}
-                            />
-                        </div>
-
-                        <div className="form-group">
-                            <label>Property Owner </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                value={this.state.productOwner}
-                                onChange={this.onChangeProductOwner}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Property Owner Contact </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                value={this.state.productContact}
-                                onChange={this.onChangeProductContact}
-                            />
-                        </div>
+            <div className="bg">
+                <BrowserRouter>
+                    <div className="d-flex justify-content-center">
+                        <MDBBtn color="deep-purple" >Admin Panel</MDBBtn>
+                    </div>
+                    <div className="d-flex justify-content-center">
+                        <MDBBtn color="primary" a href="/adminHome">Available Users</MDBBtn>
+                        <MDBBtn color="primary" a href="/adminProperty">Available Property</MDBBtn>
+                        <MDBBtn color="primary" a href="/adminAdd">Add New Property</MDBBtn>
+                    </div>
+                    <br/>
+                    <br/>
+                    <MDBRow className="d-flex justify-content-end">
+                        <MDBCol lg="10" className="lg-0 mb-4">
+                            <MDBContainer>
+                                <MDBRow>
+                                    <MDBCol md="6">
+                                        <MDBCard >
+                                            <MDBCardBody>
+                                                <h3 className='dark-grey-text text-center'>
+                                                    <strong>Enter details to add a new property</strong>
+                                                </h3>
+                                                <hr />
+                                                <form onSubmit={this.onSubmit}>
+                                                    <div className="grey-text">
+                                                        <MDBInput
+                                                            label="Property Name "
+                                                            icon="user"
+                                                            group
+                                                            type="text"
+                                                            validate
+                                                            error="wrong"
+                                                            success="right"
+                                                            value={this.state.productName}
+                                                            onChange={this.onChangeProductName}
+                                                        />
 
 
-                        <div className="form-group">
-                            <input type="submit" value="Add Property" className="btn btn-primary" />
-                        </div>
-                    </form>
-                </div>
-                <br/>
-                <br/>
-            </BrowserRouter>
+                                                        <MDBInput
+                                                            label="Property Description"
+                                                            icon="user"
+                                                            group
+                                                            type="text"
+                                                            validate
+                                                            error="wrong"
+                                                            success="right"
+                                                            value={this.state.productDesc}
+                                                            onChange={this.onChangeProductDesc}
+                                                        />
+
+
+                                                        <MDBInput
+                                                            label="Property Type"
+                                                            icon="user"
+                                                            group
+                                                            type="text"
+                                                            validate
+                                                            error="wrong"
+                                                            success="right"
+                                                            value={this.state.productType}
+                                                            onChange={this.onChangeProductType}
+                                                        />
+
+
+                                                        <MDBInput
+                                                            label="Property Price"
+                                                            icon="user"
+                                                            group
+                                                            type="text"
+                                                            validate
+                                                            error="wrong"
+                                                            success="right"
+                                                            value={this.state.productPrice}
+                                                            onChange={this.onChangeProductPrice}
+                                                        />
+
+
+                                                        <MDBInput
+                                                            label="Property Owner"
+                                                            icon="user"
+                                                            group
+                                                            type="text"
+                                                            validate
+                                                            error="wrong"
+                                                            success="right"
+                                                            value={this.state.productOwner}
+                                                            onChange={this.onChangeProductOwner}
+                                                        />
+                                                        <MDBInput
+                                                            label="Property Owner Contact"
+                                                            icon="user"
+                                                            group
+                                                            type="text"
+                                                            validate
+                                                            error="wrong"
+                                                            success="right"
+                                                            value={this.state.productContact}
+                                                            onChange={this.onChangeProductContact}
+                                                        />
+                                                    </div>
+                                                    <div className="text-center py-4 mt-3">
+                                                        <MDBBtn color="cyan" type="submit">
+                                                            Add New Property
+                                                        </MDBBtn>
+                                                    </div>
+                                                </form>
+
+                                                <br/>
+                                                <br/>
+                                            </MDBCardBody>
+                                        </MDBCard>
+                                    </MDBCol>
+                                </MDBRow>
+                            </MDBContainer>
+                        </MDBCol>
+                    </MDBRow>
+                    <br/>
+                    <br/>
+                </BrowserRouter>
+            </div>
 
         );
     }
 }
-
 export default AddPropertyPageAdmin;
 
 
