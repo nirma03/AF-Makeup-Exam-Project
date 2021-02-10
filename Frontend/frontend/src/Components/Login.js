@@ -72,7 +72,7 @@ class Login extends Component {
                 } else  {
                     toast("Admin Login  Successful");
                     login(response.data.token, response.data.user);
-                    window.location = "/";
+                    window.location = "/adminhome";
                 }
             })
             .catch((error) => {

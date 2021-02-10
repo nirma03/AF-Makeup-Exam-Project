@@ -42,11 +42,6 @@ class Register extends Component {
         };
     }
 
-    // updateInput(key, value) {
-    //     this.setState({
-    //         [key]: value,
-    //     });
-    // }
     onChangeUsername(event){
         this.setState({
             username: event.target.value,
@@ -155,7 +150,6 @@ class Register extends Component {
             <div className="bg">
             <div id='contactformpage'>
                 <MDBView>
-                    {/*<MDBMask overlay='indigo-strong' />*/}
                     <MDBContainer
                         style={{ height: '100%', width: '100%', paddingTop: '10rem' }}
                         className='d-flex justify-content-center align-items-center'

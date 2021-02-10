@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-//User Model
+//Product Model
 const productSchema = new Schema(
     {
         productName:{ type: String, required: true, trim: true},
@@ -11,10 +11,10 @@ const productSchema = new Schema(
         productPrice:{type: String, required: true, trim: true},
         productOwner: { type: String, required: true, trim: true },
         productContact: { type: String, required: true, trim: true },
-        images: {
-            type: Array,
-            default: [],
-        },
+        // images: {
+        //     type: Array,
+        //     default: [],
+        // },
     },
     {
         timestamps: true,

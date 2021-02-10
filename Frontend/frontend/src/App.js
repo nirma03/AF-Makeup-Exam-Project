@@ -15,6 +15,8 @@ import Rentals from "./Components/Rentals";
 import ContactUs from "./Components/ContactUs";
 import RentPro1 from "./Components/Rent-Pro1";
 import BuyPro1 from "./Components/Buy-Pro1";
+import PropertyPageAdmin from "./Components/PropertyPage.Admin";
+import AddPropertyPageAdmin from "./Components/AddPropertyPage.Admin";
 
 function App() {
     return (
@@ -37,6 +39,9 @@ function App() {
                      <Route exact path="/contact" component={ContactUs}/>
                     <Route exact path="/rentp1" component={RentPro1}/>
                     <Route exact path="/buyp1" component={BuyPro1}/>
+                    <Route exact path="/adminHome" component={HomePageAdmin}/>
+                    <Route exact path="/adminProperty" component={PropertyPageAdmin}/>
+                <Route exact path="/adminAdd" component={AddPropertyPageAdmin}/>
             </Switch>
                 <Footer/>
             </BrowserRouter>
