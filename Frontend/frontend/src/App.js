@@ -13,6 +13,7 @@ import HomePageCustomer from "./Components/HomePage.Customer";
 import Buy from "./Components/Buy";
 import Rentals from "./Components/Rentals";
 import ContactUs from "./Components/ContactUs";
+import RentPro1 from "./Components/Rent-Pro1";
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                     <Route exact path="/buy" component={Buy}/>
                     <Route exact path="/rent" component={Rentals}/>
                      <Route exact path="/contact" component={ContactUs}/>
+                <Route exact path="/rentp1" component={RentPro1}/>
             </Switch>
                 <Footer/>
             </BrowserRouter>

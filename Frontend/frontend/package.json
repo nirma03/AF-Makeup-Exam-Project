@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "prop-types": "^15.7.2",
+    "react-image-lightbox": "^5.1.1",
     "react-router-dom": "^5.2.0"
   }
 }

@@ -51,8 +51,8 @@ class Rentals extends Component {
                                     amet, consectetur, adipisci velit cupidatat proident
                                     voluptatem quia numquam.
                                 </p>
-                                <MDBBtn color="success" rounded>
-                                    MDBView more
+                                <MDBBtn color="success" rounded a href="/rentp1">
+                                    View More
                                 </MDBBtn>
                             </MDBCardBody>
                         </MDBCol>
