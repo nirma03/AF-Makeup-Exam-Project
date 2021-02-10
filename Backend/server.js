@@ -28,4 +28,9 @@ app.listen(PORT, function() {
 
 //Routes
 const usersRouter = require("./routes/user.routes");
+const productRouter = require("./routes/product.routes");
+const bookingRouter= require("./routes/appointmentBooking.routes")
+
 app.use("/users", usersRouter);
+app.use("/products", productRouter);
+app.use("/bookings", bookingRouter);

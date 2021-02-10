@@ -20,7 +20,7 @@ import {serverUrl} from "./config";
 import {toast} from "react-toastify";
 import {Form} from "react-bootstrap";
 
-class RentPro1 extends Component {
+class BuyPro1 extends Component {
 
     constructor(props) {
         super(props);
@@ -112,7 +112,7 @@ class RentPro1 extends Component {
         // const { photoIndex, isOpen, images } = this.state;
         return (
             <MDBContainer className="mt-5" >
-                    <h2 className="font-weight-bold my-5 text-center">Apartment for Rent - Nugegoda</h2>
+                <h2 className="font-weight-bold my-5 text-center">House for Sale - Gampaha</h2>
                 <MDBRow className="d-flex justify-content-center">
                     <MDBContainer>
                         <MDBCard className="card-body" style={{ width: "40rem", marginTop: "1rem",
@@ -158,14 +158,14 @@ class RentPro1 extends Component {
                                         </MDBCarouselInner>
                                     </MDBCarousel>
                                 </MDBContainer>
-                                <h3 className="font-weight-bold my-5 text-center">LRK 60,000 per month</h3>
-                                <p>Location: No.25, Pagoda Rd, Nugegoda</p>
-                                <p>single-storeyed, 2 bedrooms, 2 bathrooms, 1 kitchen</p></MDBCardTitle>
+                                <h3 className="font-weight-bold my-5 text-center">LKR 7,800,000</h3>
+                                <p>Location: No.5/A, Station Road, Gampaha </p>
+                                <p>Single-storeyed, 2 bedrooms, 2 bathrooms, 1 kitchen</p></MDBCardTitle>
                             <MDBCardText></MDBCardText>
                             <Form onSubmit={this.onSubmit} >
-                            <MDBCard>
-                                <MDBCardBody>
-                                    <form>
+                                <MDBCard>
+                                    <MDBCardBody>
+                                        <form>
                                             <MDBInput
                                                 label="Your name"
                                                 icon="user"
@@ -213,12 +213,12 @@ class RentPro1 extends Component {
                                                 required
                                             />
 
-                                        <div className="text-center py-4 mt-3">
-                                            <MDBBtn color="deep-purple" type="submit" >Contact Admin to book an appointment</MDBBtn>
-                                        </div>
-                                    </form>
-                                </MDBCardBody>
-                            </MDBCard>
+                                            <div className="text-center py-4 mt-3">
+                                                <MDBBtn color="deep-purple" type="submit" >Contact Admin to book an appointment</MDBBtn>
+                                            </div>
+                                        </form>
+                                    </MDBCardBody>
+                                </MDBCard>
                             </Form>
                         </MDBCard>
                     </MDBContainer>
@@ -230,4 +230,4 @@ class RentPro1 extends Component {
     }
 }
 
-export default RentPro1;
+export default BuyPro1;

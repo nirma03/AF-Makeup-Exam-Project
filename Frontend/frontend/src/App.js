@@ -14,6 +14,7 @@ import Buy from "./Components/Buy";
 import Rentals from "./Components/Rentals";
 import ContactUs from "./Components/ContactUs";
 import RentPro1 from "./Components/Rent-Pro1";
+import BuyPro1 from "./Components/Buy-Pro1";
 
 function App() {
     return (
@@ -34,7 +35,8 @@ function App() {
                     <Route exact path="/buy" component={Buy}/>
                     <Route exact path="/rent" component={Rentals}/>
                      <Route exact path="/contact" component={ContactUs}/>
-                <Route exact path="/rentp1" component={RentPro1}/>
+                    <Route exact path="/rentp1" component={RentPro1}/>
+                    <Route exact path="/buyp1" component={BuyPro1}/>
             </Switch>
                 <Footer/>
             </BrowserRouter>
