@@ -1,0 +1,7 @@
+Run $npm install on both frontend and backend of the project
+On backend run $ nodemon server.js
+On frontend run $ npm start
+
+ADMIN PANEL
+username: admin
+password: admin123
